@@ -1,5 +1,7 @@
 "use client";
 
+import { useState, useEffect } from "react";
+import { getInitialBlogs } from "../../blog-editor/components/localStorage";
 import {
   Tabs,
   TabsContent,
@@ -9,7 +11,21 @@ import {
 
 import Card from "../components/Card";
 
+
 export function Blog7() {
+  const [blogs, setBlogs] = useState(getInitialBlogs());
+  
+
+  // Sync blogs with localStorage whenever it changes
+  useEffect(() => {
+    const storedBlogs = getInitialBlogs();
+    setBlogs(storedBlogs);
+  }, []);
+
+  const handleCardClick = (cardId: number) => {
+    console.log("Card clicked with ID:", cardId); // Debugging log
+  };
+
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
@@ -25,7 +41,8 @@ export function Blog7() {
           </div>
         </div>
         <div className="flex flex-col justify-start">
-          <a href="blog-post" className="block size-full">
+       
+          <a href={`/blog-post/1`} className="block w-full" key={1} onClick={() => handleCardClick(1)}>
             <Card className="rb-12 mb-12 grid grid-cols-1 items-center md:mb-16 md:grid-cols-2">
               <img
                 src="/blogposter.png"
@@ -36,7 +53,7 @@ export function Blog7() {
                 <div className="flex w-full flex-col items-start justify-start">
                   <p className="mb-2 text-sm font-semibold">Updates</p>
                   <h3 className="mb-2 text-2xl font-bold md:text-3xl md:leading-[1.3] lg:text-4xl">
-                    The Future of Alcohol Delivery
+                    {blogs["blog-1"].title} {/* Dynamically render the title */}
                   </h3>
                   <p>
                     Discover how Grabbl is revolutionizing alcohol delivery
@@ -63,6 +80,7 @@ export function Blog7() {
               </div>
             </Card>
           </a>
+         
           <Tabs defaultValue="view-all" className="flex flex-col justify-start">
             <TabsList className="mb-12 ml-[-5vw] flex no-scrollbar w-screen items-center overflow-auto pl-[5vw] md:mb-16 md:ml-0 md:w-full md:overflow-hidden md:pl-0">
               <TabsTrigger
@@ -107,8 +125,9 @@ export function Blog7() {
               className="data-[state=active]:animate-tabs"
             >
               <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-16 lg:grid-cols-3">
+              <a href={`/blog-post/2`} className="block w-full" key={2} onClick={() => handleCardClick(2)}>
                 <Card className="flex size-full flex-col items-center justify-start">
-                  <a href="#" className="w-full">
+                  <a href="/blog-post/2" className="w-full">
                     <img
                       src="/safe_deliver.png"
                       alt="Relume placeholder image"
@@ -117,11 +136,11 @@ export function Blog7() {
                   </a>
                   <div className="flex w-full flex-1 flex-col justify-between px-5 py-6 md:p-6 lg:p-6">
                     <p className="mb-2 text-sm font-semibold">Updates</p>
-                    <a className="mb-2" href="#">
+                    
                       <h2 className="text-xl font-bold md:text-2xl">
-                        How to Order Alcohol Safely
+                        {blogs["blog-2"].title} {/* Dynamically render the title */}
                       </h2>
-                    </a>
+                    
                     <p>Learn the best practices for safe alcohol delivery.</p>
                     <div className="mt-6 flex items-center">
                       <div className="mr-4 shrink-0">
@@ -142,6 +161,7 @@ export function Blog7() {
                     </div>
                   </div>
                 </Card>
+              </a>
                 <Card className="flex size-full flex-col items-center justify-start">
                   <a href="#" className="w-full">
                     <img

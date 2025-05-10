@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbSeparator,
-} from "@relume_io/relume-ui";
+
 import {
   BiLinkAlt,
   BiLogoFacebookCircle,
@@ -14,24 +8,17 @@ import {
 } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
 
+import { Title } from "./Title";
+
 export function BlogPostHeader1() {
+  
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="mx-auto mb-12 flex w-full max-w-lg flex-col items-start justify-start md:mb-16 lg:mb-20">
-          <Breadcrumb className="mb-6 flex w-full items-center">
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="#">Blogs</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="#">Insights</BreadcrumbLink>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
+
           <h1 className="mb-8 text-5xl font-bold md:mb-10 md:text-7xl lg:mb-12 lg:text-5xl">
-            The Future of Alcohol Delivery Apps
+            <Title/>
           </h1>
           <div className="flex w-full flex-col items-start justify-between sm:flex-row sm:items-end">
             <div className="rb-4 mb-4 flex items-center sm:mb-0">

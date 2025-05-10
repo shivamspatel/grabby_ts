@@ -1,11 +1,7 @@
 "use client";
 
 import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbSeparator,
+
 } from "@relume_io/relume-ui";
 import { Fragment } from "react";
 import {
@@ -14,6 +10,12 @@ import {
   BiLogoLinkedinSquare,
 } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
+import { IntroductionParagraph } from "./Intro";
+import { BlogImage } from "./BlogImage";
+import { BoldBody } from "./BoldBody";
+import { Body2Paragraph } from "./Body2Paragraph.tsx";
+import { Quote } from "./Quote";
+import { Conclusion } from "./Conclusion";
 
 export function Content30() {
   return (
@@ -21,17 +23,7 @@ export function Content30() {
       <div className="container">
         <div className="mx-auto max-w-lg">
           <div className="mb-14 flex flex-col gap-y-8 sm:flex-row sm:items-center sm:justify-between md:mb-16 md:gap-y-0">
-            <Breadcrumb className="flex items-center">
-              <BreadcrumbList>
-                <BreadcrumbItem>
-                  <BreadcrumbLink href="#">Blog</BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbLink href="#">Category</BreadcrumbLink>
-                </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
+
             <div className="flex items-start gap-2">
               <a
                 href="#"
@@ -62,42 +54,15 @@ export function Content30() {
           <div className="md:prose-md prose lg:prose-lg mb-12 md:mb-16 lg:mb-20">
             <Fragment>
               <h3>Introduction</h3>
-              <p>
-                Welcome to our blog, where we explore the exciting world of Grabbl! Our app is designed to simplify your shopping experience by allowing you to purchase alcohol and snacks from local stores with just a few taps. With Grabbl, you can enjoy the convenience of fast delivery, often at lower prices than competitors like DoorDash and UberEats.
-              </p>
-              <p>
-                Our user-friendly interface ensures that you can navigate through the app effortlessly. Whether you're planning a gathering or just need a late-night snack, Grabbl is here to serve you. We pride ourselves on providing a seamless experience, making it easier than ever to satisfy your cravings.
-              </p>
+              <IntroductionParagraph />
               <figure>
-                <img
-                  src="/backgroundblog.jpg"
-                  alt="Relume placeholder image"
-                />
-                <figcaption>Image caption goes here</figcaption>
+                <BlogImage />
               </figure>
-              <h6>
-                As you explore our app, you'll find a wide selection of products from your favorite local liquor stores and convenience shops. Our platform allows merchants to easily manage their inventory and orders, ensuring that you have access to the freshest items available.
-
-              </h6>
-              <p>
-                We understand that time is of the essence, which is why our app is designed to minimize waiting. With Grabbl, you can choose to have your order delivered directly to your door or opt for in-store pickup at your convenience.
-              </p>
-              <blockquote>
-                "Grabbl is the easiest way to get what you want, when you want it!"
-              </blockquote>
-              <p>
-                Our commitment to affordability means you can enjoy your favorite products without breaking the bank. We work closely with local merchants to ensure competitive pricing and a diverse selection of items.
-              </p>
-              <h4>Conclusion</h4>
-              <p>
-                  In conclusion, Grabbl is revolutionizing the way you shop for alcohol and snacks. With our easy-to-use app, you can enjoy fast, affordable delivery from local stores. Don't miss out on the convenience and savings that Grabbl offers.
-              </p>
-              <p>
-                Join the Grabbl community today and experience the difference for yourself! Download the app now and start enjoying your favorite products at unbeatable prices.
-              </p>
-              <p>
-                Thank you for reading our blog! We hope you found this information helpful and informative. If you have any questions or feedback, please feel free to reach out to us.
-              </p>
+              <BoldBody />
+              <Body2Paragraph />
+              <Quote />
+              <Conclusion />
+              
             </Fragment>
           </div>
           <div>

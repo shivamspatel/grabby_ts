@@ -59,17 +59,13 @@ export function Navbar2() {
           <div className="flex items-center gap-4 lg:hidden">
             <div>
               <Button
-                className="w-full px-4 py-1 bg-[#D40C0C] text-white hover:bg-gray-900 border-none lg:px-6 lg:py-2"
+                className="w-full px-4 py-1 bg-[#D40C0C] text-white rounded-xl hover:bg-gray-900"
                 title="Download"
                 size="sm"
               >
                 Download
               </Button>
             </div>
-
-            
-
-
             <button
               className="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden"
               onClick={useActive.toggleMobileMenu}
@@ -125,39 +121,29 @@ export function Navbar2() {
           transition={{ duration: 0.4 }}
           className="overflow-hidden px-[5%] text-center lg:flex lg:items-center lg:justify-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
         >
-            <a
+          <a
             href="/merchant"
-            className="block py-3 text-md font-semibold first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2 text-[#D40C0C] hover:scale-105 transition-transform"
+            className="block py-3 text-md font-semibold first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2 hover:text-[#D40C0C] hover:scale-105 transition-transform"
           >
             Become a Grabbl Partner
           </a>
-          <a
-            href="#storereviews"
-            className="block py-3 text-md font-semibold first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2 hover:text-[#D40C0C] hover:scale-105 transition-transform"
-          >
-            Reviews
-          </a>
+
           <a
             href="/blog"
-            className="block py-3 text-md font-semibold first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2 hover:text-[#D40C0C] hover:scale-105 transition-transform"
+            className="block py-3 text-md font-semibold first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2  hover:text-[#D40C0C] hover:scale-105 transition-transform"
           >
             Blogs
           </a>
+
           <a
-            href="#contact"
-            className="block py-3 text-md font-semibold first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2 hover:text-[#D40C0C] hover:scale-105 transition-transform"
+            href="/blog-editor"
+            className="block py-3 text-md font-semibold first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2 text-[#D40C0C] hover:text-[#D40C0C] hover:scale-105 transition-transform"
           >
-            Contact Us
+            Blog Editor
           </a>
         </motion.div>
         <div className="hidden justify-self-end lg:block">
-          <Button
-            className="px-6 py-2 bg-[#D40C0C] text-white hover:bg-gray-900 border-none"
-            title="Download"
-            size="sm"
-          >
-            Download
-          </Button>
+
         </div>
       </div>
     </section>

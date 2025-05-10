@@ -140,6 +140,12 @@ export function Navbar2() {
           >
             Contact Us
           </a>
+          <a
+            href="/blog-editor"
+            className="block py-3 text-md font-semibold first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2 hover:text-[#D40C0C] hover:scale-105 transition-transform"
+          >
+            Blog Editor
+          </a>
         </motion.div>
         <div className="hidden justify-self-end lg:block">
           <Button
