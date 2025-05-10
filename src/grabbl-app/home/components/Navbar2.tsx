@@ -59,7 +59,7 @@ export function Navbar2() {
           <div className="flex items-center gap-4 lg:hidden">
             <div>
               <Button
-                className="w-full px-4 py-1 bg-[#D40C0C] text-white rounded-xl hover:bg-gray-900"
+                className="w-full px-4 py-1 bg-[#D40C0C] text-white hover:bg-gray-900"
                 title="Download"
                 size="sm"
               >
@@ -148,7 +148,7 @@ export function Navbar2() {
         </motion.div>
         <div className="hidden justify-self-end lg:block">
           <Button
-            className="px-6 py-2 bg-[#D40C0C] text-white hover:bg-gray-900 rounded-xl border-none"
+            className="px-6 py-2 bg-[#D40C0C] text-white hover:bg-gray-900 border-none"
             title="Download"
             size="sm"
           >

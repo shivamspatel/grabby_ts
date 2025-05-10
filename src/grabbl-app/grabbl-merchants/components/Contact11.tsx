@@ -30,7 +30,6 @@ export function Contact11() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [formStatus, setFormStatus] = useState({ type: "", message: "" });
-  const [firestoreStatus, setFirestoreStatus] = useState({ isConnected: false, message: "" });
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Validation state
@@ -46,21 +45,12 @@ export function Contact11() {
   useEffect(() => {
     const testFirestoreConnection = async () => {
       try {
-        setFirestoreStatus({ isConnected: false, message: "Testing connection..." });
         
-        // A better way to test connection - query the collection instead of a specific document
-        const querySnapshot = await getDocs(query(collection(db, "contacts"), limit(1)));
-        console.log("Connection test successful:", querySnapshot.docs.length);
-        setFirestoreStatus({ 
-          isConnected: true, 
-          message: "Connected to Firestore successfully" 
-        });
+        // Get all documents from the contacts collection
+        const querySnapshot = await getDocs(collection(db, "contacts"));
+
       } catch (error) {
         console.error("Firestore connection error:", error);
-        setFirestoreStatus({ 
-          isConnected: false, 
-          message: `Failed to connect to Firestore: ${error instanceof Error ? error.message : "Unknown error"}` 
-        });
       }
     };
 
@@ -113,9 +103,9 @@ export function Contact11() {
           : "Invalid email format"
         : "Email is required",
       phone: formData.phone 
-        ? /^\+?[0-9\s\-()]+$/.test(formData.phone) 
+        ? /^\(?([0-9]{3})\)?[-.●\s]?([0-9]{3})[-.●\s]?([0-9]{4})$/.test(formData.phone)
           ? "" 
-          : "Invalid phone format"
+          : "Invalid phone format (must be 10 digits)"
         : "Phone number is required",
       storeName: formData.storeName ? "" : "Store name is required",
     };
@@ -134,6 +124,11 @@ export function Contact11() {
 
     try {
       console.log("Submitting form data:", formData); // Log form data
+      
+      // Add more detailed logging
+      console.log("Attempting to connect to Firestore...");
+      console.log("Firestore instance:", db);
+      
       const docRef = await addDoc(collection(db, "contacts"), formData);
       console.log("Document written with ID: ", docRef.id); // Log Firestore response
 
@@ -151,7 +146,13 @@ export function Contact11() {
         message: "Form submitted successfully! We'll be in touch soon.",
       });
     } catch (error) {
-      console.error("Error adding document: ", error); // Log the error
+      // Enhanced error logging
+      console.error("Error details:", {
+        name: error instanceof Error ? error.name : 'Unknown',
+        message: error instanceof Error ? error.message : 'Unknown error',
+        stack: error instanceof Error ? error.stack : undefined
+      });
+      
       setFormStatus({
         type: "error",
         message: `Failed to submit the form: ${
@@ -171,13 +172,6 @@ export function Contact11() {
             Partner with Grabbl
           </h2>
           <p className="md:text-md">We'd love to hear from you!</p>
-          
-          {/* Firestore connection status - only shown in development */}
-          {process.env.NODE_ENV === 'development' && (
-            <div className={`mt-4 p-2 text-sm rounded ${firestoreStatus.isConnected ? 'bg-green-100' : 'bg-red-100'}`}>
-              {firestoreStatus.message}
-            </div>
-          )}
         </div>
         
         {/* Form status messages */}

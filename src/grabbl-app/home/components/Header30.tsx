@@ -18,10 +18,10 @@ export function Header30() {
               prices that beat the competition.
             </p>
             <div className="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
-              <Button title="Download" className="bg-[#D40C0C] text-white rounded-xl transform transition-transform duration-200 hover:scale-105 border-none">
+              <Button title="Download" className="bg-[#D40C0C] text-white transform transition-transform duration-200 hover:scale-105 border-none">
   Download
               </Button>
-              <Button title="Learn More" variant="secondary-alt" className="rounded-xl hover:bg-black  transition-colors duration-200">
+              <Button title="Learn More" variant="secondary-alt" className="hover:bg-black transition-colors duration-200">
                 Learn More
               </Button>
             </div>

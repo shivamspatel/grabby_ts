@@ -1,4 +1,3 @@
-
 import { Button } from "@relume_io/relume-ui";
 
 function Gallery() {
@@ -19,10 +18,10 @@ function Gallery() {
         </div>
 
         <div className="flex justify-center gap-4 mb-16">
-              <Button title="Download" className="bg-[#D40C0C] text-white rounded-xl transform transition-transform duration-200 hover:scale-105 border-none">
+              <Button title="Download" className="bg-[#D40C0C] text-white transform transition-transform duration-200 hover:scale-105 border-none">
   Download
               </Button>
-              <Button title="Learn More" variant="tertiary" className="rounded-xl bg-gray-200 hover:bg-black hover:text-white transition-colors duration-200">
+              <Button title="Learn More" variant="tertiary" className="bg-gray-200 hover:bg-black hover:text-white transition-colors duration-200">
                 Learn More
               </Button>
         </div>
@@ -33,12 +32,12 @@ function Gallery() {
             <img
               src="/alc.png"
               alt="Left small rectangle 1"
-              className="aspect-[2/3] rounded-3xl overflow-hidden object-cover mb-4"
+              className="aspect-[2/3] overflow-hidden object-cover mb-4"
             />
             <img
               src="/app.png"
               alt="Left small rectangle 2"
-              className="aspect-[2/3] rounded-3xl overflow-hidden object-cover"
+              className="aspect-[2/3] overflow-hidden object-cover"
             />
           </div>
 
@@ -47,7 +46,7 @@ function Gallery() {
             <img
               src="/grabbl_alc.png"
               alt="Left larger rectangle"
-              className="aspect-[2/3] w-full rounded-3xl overflow-hidden object-cover"
+              className="aspect-[2/3] w-full overflow-hidden object-cover"
             />
           </div>
 
@@ -56,7 +55,7 @@ function Gallery() {
             <img
               src="/grabbl_friends.png"
               alt="Middle rectangle"
-              className="aspect-square w-full mx-auto rounded-3xl overflow-hidden object-cover"
+              className="aspect-square w-full mx-auto overflow-hidden object-cover"
             />
           </div>
 
@@ -65,7 +64,7 @@ function Gallery() {
             <img
               src="/poster.png"
               alt="Right larger rectangle"
-              className="aspect-[2/3] w-full rounded-3xl overflow-hidden object-cover"
+              className="aspect-[2/3] w-full overflow-hidden object-cover"
             />
           </div>
 
@@ -74,12 +73,12 @@ function Gallery() {
             <img
               src="/grabbl_ad.png"
               alt="Right small rectangle 1"
-              className="aspect-[2/3] rounded-3xl overflow-hidden object-cover mb-4"
+              className="aspect-[2/3] overflow-hidden object-cover mb-4"
             />
             <img
               src="/grabbl_bag.png"
               alt="Right small rectangle 2"
-              className="aspect-[2/3] rounded-3xl overflow-hidden object-cover"
+              className="aspect-[2/3] overflow-hidden object-cover"
             />
           </div>
         </div>

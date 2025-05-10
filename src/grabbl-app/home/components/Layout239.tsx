@@ -69,10 +69,10 @@ export function Layout239() {
 
         </div>
         <div className="flex justify-center gap-4 mb-16">
-              <Button title="Download" className="bg-[#D40C0C] text-white rounded-xl transform transition-transform duration-200 hover:scale-105 border-none">
+              <Button title="Download" className="bg-[#D40C0C] text-white transform transition-transform duration-200 hover:scale-105 border-none">
               Download
               </Button>
-              <Button title="Learn More" variant="tertiary" className="rounded-xl bg-gray-200 hover:bg-black hover:text-white transition-colors duration-200">
+              <Button title="Learn More" variant="tertiary" className="bg-gray-200 hover:bg-black hover:text-white transition-colors duration-200">
                 Learn More
               </Button>
         </div>

@@ -17,4 +17,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 // Initialize Firestore
-export const db = getFirestore(app); // Export Firestore instance
+export const db = getFirestore(app, "grabbl-website"); // Export Firestore instance

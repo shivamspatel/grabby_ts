@@ -5,9 +5,15 @@ import { Button } from "@relume_io/relume-ui";
 
 export function Header65() {
   return (
-    <section id="relume" className="relative px-[5%] py-16 md:py-24 lg:py-28">
+    <section id="relume" className="relative px-[5%] py-8 md:py-12 lg:py-16">
       <div className="relative z-10 container max-w-lg text-center">
-        
+        <div className="flex justify-center mb-6">
+          <img
+              src="/indianowner.jpg"
+              className="w-1/2 rounded-xl object-cover border-[3px] border-white"
+              alt="Relume placeholder image"
+            />
+        </div>
         <h1 className="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-6xl">
           Partner with Grabbl Store
         </h1>
@@ -31,7 +37,7 @@ export function Header65() {
           className="size-full object-cover"
           alt="Relume placeholder image"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/70" />
       </div>
     </section>
   );
