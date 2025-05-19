@@ -6,6 +6,8 @@ import Merchant from './grabbl-app/grabbl-merchants/index'
 import BlogEditor from './grabbl-app/blog-editor'
 import Blog from './grabbl-app/blogs/index'
 import BlogPost from './grabbl-app/blog-post/index'
+// import PrivacyPolicy from './grabbl-app/privacy-policy/index'
+
 
 
 
@@ -21,6 +23,9 @@ function App() {
           <Route path="/blog" element={<Blog /> } />
           <Route path="/blog-post/1" element={<BlogPost /> } />
           <Route path="/blog/:blogId" element={<BlogPost /> } />
+          {/* <Route path="/privacy-policy" element={<PrivacyPolicy /> } /> */}
+          
+          
           
           
         </Routes>

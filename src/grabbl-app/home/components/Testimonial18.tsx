@@ -30,7 +30,7 @@ export function Testimonial18() {
             </blockquote>
             <div className="mt-5 flex w-full flex-col items-start gap-4 md:mt-6 md:w-fit md:flex-row md:items-center">
               <img
-                src="/appstorereview.svg"
+                src="/man_playstore_review.png"
                 alt="Testimonial avatar"
                 className="size-12 min-h-12 min-w-12 rounded-full object-cover overflow-visible"
               />
@@ -76,7 +76,7 @@ export function Testimonial18() {
             </blockquote>
             <div className="mt-5 flex w-full flex-col items-start gap-4 md:mt-6 md:w-fit md:flex-row md:items-center">
               <img
-                src="/playstorereview.png"
+                src="/girl_playstore.png"
                 alt="Testimonial avatar"
                 className="size-12 min-h-12 min-w-12 rounded-full object-cover"
               />
@@ -99,7 +99,7 @@ export function Testimonial18() {
             </blockquote>
             <div className="mt-5 flex w-full flex-col items-start gap-4 md:mt-6 md:w-fit md:flex-row md:items-center">
               <img
-                src="/appstorereview.svg"
+                src="/woman_appstore.png"
                 alt="Testimonial avatar"
                 className="size-12 min-h-12 min-w-12 rounded-full object-cover overflow-visible"
               />
@@ -145,7 +145,7 @@ export function Testimonial18() {
             </blockquote>
             <div className="mt-5 flex w-full flex-col items-start gap-4 md:mt-6 md:w-fit md:flex-row md:items-center">
               <img
-                src="/playstorereview.png"
+                src="/girl_appstore.png"
                 alt="Testimonial avatar"
                 className="size-12 min-h-12 min-w-12 rounded-full object-cover overflow-visible"
               />

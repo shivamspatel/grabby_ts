@@ -114,13 +114,19 @@ export function Footer3() {
           <p className="mt-8 md:mt-0">© 2025 Grabbl</p>
           <ul className="grid grid-flow-row grid-cols-[max-content] justify-center gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
             <li className="underline">
-              <a href="#">Privacy Policy</a>
+              <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">
+                Privacy Policy
+              </a>
             </li>
             <li className="underline">
-              <a href="#">Terms of Service</a>
+              <a href="/terms-of-service" target="_blank" rel="noopener noreferrer">
+                Terms of Service
+              </a>
             </li>
             <li className="underline">
-              <a href="#">Cookies Settings</a>
+              <a href="/delete-account" target="_blank" rel="noopener noreferrer">
+                Delete Your Account
+              </a>
             </li>
           </ul>
         </div>

@@ -35,7 +35,7 @@ function Gallery() {
               className="aspect-[2/3] overflow-hidden object-cover mb-4"
             />
             <img
-              src="/app.png"
+              src="/Grabbl-3.png"
               alt="Left small rectangle 2"
               className="aspect-[2/3] overflow-hidden object-cover"
             />

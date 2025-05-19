@@ -37,7 +37,7 @@ export function Cta1() {
           </div>
           <div>
             <img
-              src="/indianowner.jpg"
+              src="/liquorstore_Owner.png"
               className="w-full rounded-xl object-cover"
               alt="Relume placeholder image"
             />

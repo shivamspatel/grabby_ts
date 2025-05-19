@@ -9,7 +9,7 @@ export function Header65() {
       <div className="relative z-10 container max-w-lg text-center">
         <div className="flex justify-center mb-6">
           <img
-              src="/indianowner.jpg"
+              src="/a-young-family-a-man-and-a-woman-choose-alcohol-i-2025-01-10-21-36-45-utc.JPG"
               className="w-1/2 rounded-xl object-cover border-[3px] border-white"
               alt="Relume placeholder image"
             />

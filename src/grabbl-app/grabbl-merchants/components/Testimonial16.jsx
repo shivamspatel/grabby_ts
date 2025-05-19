@@ -75,16 +75,16 @@ export function Testimonial16() {
                     <Dialog>
                       <DialogTrigger className="relative flex w-full items-center justify-center overflow-hidden rounded-image">
                         <img
-                          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-video-thumbnail.svg"
+                          src="/gettyimages-924149462-612x612.jpg"
                           alt="Testimonial image 1"
                           className="size-full object-cover"
                         />
                         <span className="absolute inset-0 z-10 bg-black/50" />
-                        <FaCirclePlay className="absolute z-20 size-16 text-white" />
+                        {/* <FaCirclePlay className="absolute z-20 size-16 text-white" /> */}
                       </DialogTrigger>
-                      <DialogContent>
+                      {/* <DialogContent>
                         <VideoIframe video="https://www.youtube.com/embed/8DKLYsikxTs?si=Ch9W0KrDWWUiCMMW" />
-                      </DialogContent>
+                      </DialogContent> */}
                     </Dialog>
                   </div>
                   <div className="flex flex-col items-start">
@@ -123,15 +123,15 @@ export function Testimonial16() {
                     <Dialog>
                       <DialogTrigger className="relative flex w-full items-center justify-center overflow-hidden rounded-image">
                         <img
-                          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-video-thumbnail.svg"
+                          src="/man-is-holding-bottle-and-smiling-wine-shop-owner-2025-03-18-22-02-02-utc.JPG"
                           alt="Testimonial image 1"
                           className="size-full object-cover"
                         />
                         <span className="absolute inset-0 z-10 bg-black/50" />
-                        <FaCirclePlay className="absolute z-20 size-16 text-white" />
+                        {/* <FaCirclePlay className="absolute z-20 size-16 text-white" /> */}
                       </DialogTrigger>
                       <DialogContent>
-                        <VideoIframe video="https://www.youtube.com/embed/8DKLYsikxTs?si=Ch9W0KrDWWUiCMMW" />
+                        {/* <VideoIframe video="https://www.youtube.com/embed/8DKLYsikxTs?si=Ch9W0KrDWWUiCMMW" /> */}
                       </DialogContent>
                     </Dialog>
                   </div>
@@ -150,13 +150,13 @@ export function Testimonial16() {
                     </blockquote>
                     <div className="mt-6 flex flex-nowrap items-center gap-5 md:mt-8">
                       <div>
-                        <p className="font-semibold">Sarah Johnson</p>
-                        <p>Freelance Writer</p>
+                        <p className="font-semibold">Kevin Johnson</p>
+                        <p>Liquor Store Owner</p>
                       </div>
                       <div className="mx-4 w-px self-stretch bg-background-alternative sm:mx-0" />
                       <div>
                         <img
-                          src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg"
+                          src="/liquorplanet.avif"
                           alt="Webflow logo 1"
                           className="max-h-12"
                         />

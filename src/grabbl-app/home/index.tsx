@@ -16,7 +16,6 @@ export default function Home() {
       <Gallery/>
       <Logo />
       <Layout239 />
-      
       <Testimonial18 />
       <Contact20 />
       <Footer3 />

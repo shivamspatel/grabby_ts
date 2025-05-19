@@ -4,17 +4,17 @@ import { getFirestore } from "firebase/firestore"; // Import Firestore
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA9o7Ha5Q3Qc9X4w4p7Oua_nLUluQ2Z85s",
-  authDomain: "grabbl.firebaseapp.com",
-  projectId: "grabbl", // Ensure this matches your Firestore project ID
-  storageBucket: "grabbl.firebasestorage.app",
-  messagingSenderId: "993650565397",
-  appId: "1:993650565397:web:9d9cdabd5fb199859e491c",
-  measurementId: "G-6FT6R5V639",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 // Initialize Firestore
-export const db = getFirestore(app, "grabbl-website"); // Export Firestore instance
+export const db = getFirestore(app, "grabbl-website"); 
